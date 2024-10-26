@@ -11,9 +11,9 @@ const Hero = () => {
 
   return (
     <>
-      <section className="overflow-hidden pb-20 pt-35 md:pt-40 xl:pb-25 xl:pt-46">
+      <section className="overflow-hidden pb-5 pt-35 md:pt-40 xl:pb-25 xl:pt-46">
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
-          <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
+          <div className="md:flex lg:items-center lg:gap-8 xl:gap-32.5">
             <div className=" md:w-1/2">
               <h4 className="mb-4.5 text-lg font-medium text-black dark:text-white">
                 🔥 Build Your Online Success
@@ -65,9 +65,19 @@ const Hero = () => {
 
             
 
-            <div className="animate_right hidden md:w-1/2 lg:block">
-              <div className="relative 2xl:-mr-7.5">
-                <Image
+           <div className="animate_right md:w-1/2 lg:block">
+            <div>
+
+               <div className="relative 2xl:-mr-9.5">
+               <Image
+                  src="/images/hero/website_image_3.png"
+                  alt="hero"
+                  width={1000}
+                  height={20}
+                  className="top-0 w-full mt-8 md:mt-0"
+                />
+            </div>
+                {/*<Image
                   src="/images/shape/shape-01.png"
                   alt="shape"
                   width={46}
@@ -101,7 +111,7 @@ const Hero = () => {
                     alt="Hero"
                     fill
                   />
-                </div>
+                </div>*/}
               </div>
             </div>
           </div>
