@@ -16,6 +16,30 @@ const Contact = () => {
     return null;
   }
 
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const formData = {
+      name: event.target[0].value,
+      email: event.target[1].value,
+      subject: event.target[2].value,
+      phone: event.target[3].value,
+      message: event.target[4].value,
+    };
+
+    const response = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData),
+    });
+  
+    const result = await response.json();
+    if (result.success) {
+      alert('Message sent successfully');
+    } else {
+      alert('Failed to send message');
+    }
+  };
+
   return (
     <>
       {/* <!-- ===== Contact Start ===== --> */}
@@ -61,6 +85,7 @@ const Contact = () => {
               </h2>
 
               <form
+              onSubmit={handleSubmit}
                 action="https://formbold.com/s/unique_form_id"
                 method="POST"
               >
@@ -134,6 +159,7 @@ const Contact = () => {
                   </div>
 
                   <button
+                  type="submit"
                     aria-label="send message"
                     className="inline-flex items-center gap-2.5 rounded-full bg-black px-6 py-3 font-medium text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark"
                   >

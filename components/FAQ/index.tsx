@@ -102,6 +102,7 @@ const FAQ = () => {
                   <FAQItem
                     key={key}
                     faqData={{ ...faq, activeFaq, handleFaqToggle }}
+                  
                   />
                 ))}
               </div>
