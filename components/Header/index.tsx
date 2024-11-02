@@ -163,7 +163,7 @@ const Header = () => {
 
             <Link
               href="https://nextjstemplates.com/templates/solid"
-              className="flex items-center justify-center rounded-full bg-primary px-7.5 py-2.5 text-regular text-white duration-300 ease-in-out hover:bg-primaryho"
+              className="flex items-center justify-center rounded-full bg-primary text-sm/[10px] md:text-sm/[18px] px-5.5 py-2.5 text-regular text-white duration-300 ease-in-out hover:bg-primaryho"
             >
               Get a Quote 🔥
             </Link>

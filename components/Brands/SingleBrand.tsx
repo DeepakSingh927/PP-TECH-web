@@ -11,8 +11,8 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
       <motion.a
         variants={{
           hidden: {
-            opacity: 0,
-            y: -20,
+            opacity: 1,
+            y: 0,
           },
 
           visible: {
@@ -25,16 +25,16 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
         transition={{ duration: 1, delay: id }}
         viewport={{ once: true }}
         href={href}
-        className="animate_top mx-w-full relative block h-10 w-[98px]"
+        className="animate_top mx-w-full relative block h-[52.5px] w-[105px] md:h-[75px] md:w-[150px]"
       >
         <Image
-          className="opacity-65 transition-all duration-300 hover:opacity-100 dark:hidden"
+          className="opacity-100 transition-all duration-300 hover:opacity-100 dark:hidden"
           src={image}
           alt={name}
           fill
         />
         <Image
-          className="hidden opacity-50 transition-all duration-300 hover:opacity-100 dark:block"
+          className="hidden opacity-100 transition-all duration-300 hover:opacity-100 dark:block"
           src={imageLight}
           alt={name}
           fill
