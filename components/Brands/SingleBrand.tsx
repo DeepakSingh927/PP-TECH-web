@@ -28,7 +28,7 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
         className="animate_top mx-w-full relative block h-[52.5px] w-[105px] md:h-[75px] md:w-[150px]"
       >
         <Image
-          className="opacity-100 transition-all duration-300 hover:opacity-100 dark:hidden"
+          className="opacity-100 transition-all duration-300 hover:opacity-100 dark:hidden mx-2"
           src={image}
           alt={name}
           fill

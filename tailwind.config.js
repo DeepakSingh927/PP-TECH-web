@@ -38,6 +38,7 @@ module.exports = {
         zumthor: "#EDF5FF",
         socialicon: "#D1D8E0",
       },
+
       fontSize: {
         metatitle: ["12px", "20px"],
         sectiontitle: ["14px", "22px"],
@@ -135,11 +136,22 @@ module.exports = {
           "0%, 100%": { transform: "translateY(100%)" },
           "50%": { transform: "translateY(0)" },
         },
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        marquee2: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0%)' },
+        },
       },
       animation: {
         line1: "line 3s linear infinite",
         line2: "line 6s linear infinite",
         line3: "line 9s linear infinite",
+        marquee: 'marquee 25s linear infinite',
+        marquee2: 'marquee2 25s linear infinite',
+        
       },
     },
   },

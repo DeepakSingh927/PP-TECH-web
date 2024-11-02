@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 /* third-party libraries CSS */
 
 .testimonial-01 .swiper-pagination-bullet {
