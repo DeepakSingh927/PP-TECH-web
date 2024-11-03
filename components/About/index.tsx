@@ -31,13 +31,13 @@ const About = () => {
               <Image
                 src="/images/about/about1.png"
                 alt="About"
-                className="dark:hidden w-full"
+                className="dark:hidden w-full pb-20 xl:pb-0"
                 fill
               />
               <Image
                 src="/images/about/about1.png"
                 alt="About"
-                className="hidden dark:block w-full"
+                className="hidden dark:block w-full pb-20 xl:pb-0"
                 fill
               />
             </motion.div>
