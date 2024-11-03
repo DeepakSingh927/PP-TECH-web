@@ -31,13 +31,13 @@ const About = () => {
               <Image
                 src="/images/about/about1.png"
                 alt="About"
-                className="dark:hidden w-full pb-20 xl:pb-0"
+                className="dark:hidden w-full"
                 fill
               />
               <Image
                 src="/images/about/about1.png"
                 alt="About"
-                className="hidden dark:block w-full pb-20 xl:pb-0"
+                className="hidden dark:block w-full"
                 fill
               />
             </motion.div>
@@ -60,7 +60,7 @@ const About = () => {
               className="animate_right md:w-1/2"
             >
               <span className="font-medium uppercase text-black dark:text-white">
-                <span className="mb-4 mr-4 inline-flex rounded-full bg-meta px-4.5 py-1 text-metatitle uppercase text-white ">
+                <span className="mt-20 mb-4 mr-4 inline-flex rounded-full bg-meta px-4.5 py-1 text-metatitle uppercase text-white ">
                   FROM
                 </span>{" "}
                 SHOPIFY TO WORDPRESS,
