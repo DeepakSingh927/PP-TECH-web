@@ -7,7 +7,7 @@ const About = () => {
   return (
     <>
       {/* <!-- ===== About Start ===== --> */}
-      <section className="overflow-hidden pb-20 lg:pb-25 xl:pb-30 xl:mt-10 ">
+      <section className="overflow-hidden pb-10 lg:pb-25 xl:pb-10 xl:mt-10 ">
         <div className="mx-auto max-w-c-1235 px-4 md:px-8 xl:px-0">
           <div className="md:flex items-center gap-8 lg:gap-32.5">
             <motion.div
@@ -29,13 +29,13 @@ const About = () => {
               className="animate_left relative mx-auto aspect-[588/526.5] w-full md:w-1/2"
             >
               <Image
-                src="/images/about/about-light-01.png"
+                src="/images/about/about1.png"
                 alt="About"
                 className="dark:hidden w-full"
                 fill
               />
               <Image
-                src="/images/about/about-dark-01.png"
+                src="/images/about/about1.png"
                 alt="About"
                 className="hidden dark:block w-full"
                 fill
@@ -121,7 +121,7 @@ const About = () => {
       {/* <!-- ===== About End ===== --> */}
 
       {/* <!-- ===== About Two Start ===== --> */}
-      <section>
+      {/*<section>
         <div className="mx-auto max-w-c-1235 overflow-hidden px-4 md:px-8 2xl:px-0">
           <div className="md:flex items-center gap-8 lg:gap-32.5">
             <motion.div
@@ -206,7 +206,7 @@ const About = () => {
             </motion.div>
           </div>
         </div>
-      </section>
+      </section>*/}
       {/* <!-- ===== About Two End ===== --> */}
     </>
   );

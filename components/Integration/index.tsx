@@ -12,8 +12,8 @@ const Integration = () => {
           <SectionHeader
             headerInfo={{
               title: `INTEGRATIONS`,
-              subtitle: `Remotely Maintain Your Data, From Anywhere, Anytime.`,
-              description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.`,
+              subtitle: `Integrated Solutions for Effortless Business Growth`,
+              description: `Leverage our ready-to-use integrations to streamline your processes, enhance user experience, and scale your business with ease.`,
             }}
           />
 
@@ -61,7 +61,7 @@ const Integration = () => {
                 <Image
                   width={50}
                   height={50}
-                  src="./images/brand/brand-07.svg"
+                  src="/images/brand/gokwik.png"
                   alt="Brand"
                 />
               </div>
@@ -108,7 +108,7 @@ const Integration = () => {
                 <Image
                   width={50}
                   height={50}
-                  src="./images/brand/brand-08.svg"
+                  src="/images/brand/razorpay.png"
                   alt="Brand"
                 />
               </div>
@@ -157,7 +157,7 @@ const Integration = () => {
                 <Image
                   width={50}
                   height={50}
-                  src="./images/brand/brand-09.svg"
+                  src="/images/brand/shiprocket.png"
                   alt="Brand"
                 />
               </div>
@@ -225,7 +225,7 @@ const Integration = () => {
                 <Image
                   width={50}
                   height={50}
-                  src="./images/brand/brand-10.svg"
+                  src="/images/brand/paypal.png"
                   alt="Brand"
                 />
               </div>
@@ -274,7 +274,7 @@ const Integration = () => {
                 <Image
                   width={50}
                   height={50}
-                  src="./images/brand/brand-11.svg"
+                  src="/images/brand/interakt.png"
                   alt="Brand"
                 />
               </div>
@@ -323,7 +323,7 @@ const Integration = () => {
                 <Image
                   width={50}
                   height={50}
-                  src="./images/brand/brand-12.svg"
+                  src="/images/brand/phonepe.png"
                   alt="Brand"
                 />
               </div>

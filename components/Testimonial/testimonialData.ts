@@ -5,34 +5,34 @@ import { Testimonial } from "@/types/testimonial";
 export const testimonialData: Testimonial[] = [
   {
     id: 1,
-    name: "Devid Smith",
-    designation: "Founter @democompany",
+    name: "Dr Anjali Thapliyal Kaul",
+    designation: "Founder @pyarefoundation",
     image: image1,
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit, ligula sit amet cursus tincidunt, lorem sem elementum nisi, convallis fringilla ante nibh non urna.",
+      "PP Design and Tech took our vision and turned it into reality. Their professionalism and attention to detail were outstanding.",
   },
   {
     id: 2,
-    name: "Jhon Abraham",
-    designation: "Founter @democompany",
+    name: "Jeevan Patil",
+    designation: "Founder @shivaaysigns",
     image: image2,
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit, ligula sit amet cursus tincidunt, lorem sem elementum nisi, convallis fringilla ante nibh non urna.",
+      "The team at PP Design and Tech exceeded our expectations. The website they delivered is fast, user-friendly, and looks fantastic.",
   },
   {
     id: 3,
-    name: "Devid Smith",
-    designation: "Founter @democompany",
+    name: "Rajesh",
+    designation: "Founder @kurkureconsulting",
     image: image1,
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit, ligula sit amet cursus tincidunt, lorem sem elementum nisi, convallis fringilla ante nibh non urna.",
+      "Working with PP Design and Tech was a breeze. They understood our needs and delivered a sleek, modern site that our customers love.",
   },
   {
     id: 4,
-    name: "Jhon Abraham",
-    designation: "Founter @democompany",
+    name: "Pushpa Thapliyal",
+    designation: "Founder @krishnasangssang",
     image: image2,
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit, ligula sit amet cursus tincidunt, lorem sem elementum nisi, convallis fringilla ante nibh non urna.",
+      "Great experience from start to finish! PP Design and Tech provided top-notch service and built a site that truly represents our brand.",
   },
 ];
