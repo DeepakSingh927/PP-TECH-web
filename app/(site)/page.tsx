@@ -12,6 +12,7 @@ import Pricing from "@/components/Pricing";
 import Contact from "@/components/Contact";
 import Blog from "@/components/Blog";
 import Testimonial from "@/components/Testimonial";
+import WebPortfolio from "@/components/WebPortfolio";
 
 export const metadata: Metadata = {
   title: "PP DESIGN AND TECH - WEBSITE AND APPS DEVELOPMENT COMPANY",
@@ -32,6 +33,7 @@ export default function Home() {
       <CTA />
       <FAQ />
       <Testimonial />
+      <WebPortfolio />
       {/*<Pricing />*/}
       <Contact />
        {/*<Blog />*/}
