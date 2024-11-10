@@ -151,7 +151,7 @@ const Header = () => {
             </ul>
           </nav>
 
-         <div className="mt-7 xl:flex items-center gap-6 xl:mt-0 text-center bg-slate-100 px-4 py-4">
+         <div className="mt-7 xl:flex items-center gap-6 xl:mt-0 text-center bg-slate-100 px-4 py-4 xl:py-0 xl:bg-transparent">
              {/*<ThemeToggler />*/}
 
             <Link

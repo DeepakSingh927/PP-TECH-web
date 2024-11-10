@@ -54,12 +54,12 @@ const Hero = () => {
                 </p>
               </div>*/}
 
-<div className="mt-8"><button
+<div className="mt-8"><a href="#support"><button
                       aria-label="get started button"
                       className="flex rounded-full bg-black px-7.5 py-2.5 text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark dark:hover:bg-blackho"
                     >
                       Get Started
-                    </button></div>
+                    </button></a></div>
 
             </div>
 
