@@ -14,7 +14,7 @@ import SinglePortfolio from "./singlePortfolio";
 const Portfolio = () => {
   return (
     <>
-      <section>
+      <section id="webportfolio">
         <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
           {/* <!-- Section Title Start --> */}
           <div className="animate_top mx-auto text-center">
@@ -45,7 +45,7 @@ const Portfolio = () => {
           whileInView="visible"
           transition={{ duration: 1, delay: 0.1 }}
           viewport={{ once: true }}
-          className="animate_top mx-auto mt-15 max-w-c-1235 px-4 md:px-8 xl:mt-10 xl:px-0"
+          className="animate_top mx-auto mt-4 max-w-c-1235 px-4 md:px-8 xl:mt-10 xl:px-0"
         >
           {/* <!-- Slider main container --> */}
           <div className="swiper testimonial-01 mb-20 pb-22.5">
@@ -64,7 +64,7 @@ const Portfolio = () => {
               breakpoints={{
                 // when window width is >= 640px
                 0: {
-                  slidesPerView: 1,
+                  slidesPerView: 2,
                 },
                 // when window width is >= 768px
                 768: {

@@ -17,85 +17,99 @@ import { Portfolio } from "@/types/portfolio";
 
 
 export const PortfolioData: Portfolio[] = [
+
   {
     id: 1,
-    image: pyarefoundation,
-    name: "Pyare Foundation",
+    image: gsnaturale,
+    name: "Gs Naturale",
+    url: "https://gsnaturale.com/",
   },
 
   {
     id: 2,
-    image: kcons,
-    name: "Kurkure Consulting",
+    image: nattier,
+    name: "nattier!",
+    url: "https://nattier.co.in/",
   },
 
   {
     id: 3,
-    image: shivaaysigns,
-    name: "Shivaay Signs",
+    image: tasveer,
+    name: "Tasveer",
+    url: "https://tasveerindia.in/",
   },
+
   {
     id: 4,
-    image: krishnasangsang,
-    name: "Krishnasangsang",
+    image: pyarefoundation,
+    name: "Pyare Foundation",
+    url: "https://pyarefoundation.org/",
   },
 
   {
     id: 5,
-    image: pratham,
-    name: "Pratham Delhi",
+    image: kcons,
+    name: "Kurkure Consulting",
+    url: "https://kcons.co.in/",
   },
 
   {
     id: 6,
-    image: ics,
-    name: "ICS Intelligent",
+    image: shivaaysigns,
+    name: "Shivaay Signs",
+    url: "https://shivaaysigns.com/",
+  },
+  {
+    id: 7,
+    image: krishnasangsang,
+    name: "Krishnasangsang",
+    url: "https://krishnasangsang.com/",
   },
 
   {
-    id: 7,
-    image: ascendus,
-    name: "ascendus",
-  },
-  {
     id: 8,
-    image: vistahomeware,
-    name: "Vista Homeware",
+    image: pratham,
+    name: "Pratham Delhi",
+    url: "https://prathamdelhi.org/",
   },
 
   {
     id: 9,
-    image: gsnaturale,
-    name: "Gs Naturale",
+    image: ics,
+    name: "ICS Intelligent",
+    url: "https://icsintelligent.com/",
   },
 
   {
     id: 10,
-    image: volcape,
-    name: "Volcape",
+    image: ascendus,
+    name: "ascendus",
+    url: "https://ascenduslaw.com/",
   },
-
   {
     id: 11,
-    image: nattier,
-    name: "nattier!",
+    image: vistahomeware,
+    name: "Vista Homeware",
+    url: "https://vistahomeware.com/",
   },
 
   {
     id: 12,
-    image: bbf,
-    name: "Big Bear Farms",
+    image: volcape,
+    name: "Volcape",
+    url: "https://volcape.com/",
   },
   {
     id: 13,
-    image: tasveer,
-    name: "Tasveer",
+    image: bbf,
+    name: "Big Bear Farms",
+    url: "https://www.bigbearfarms.in/",
   },
-
   {
     id: 14,
     image: nanis,
     name: "Nanis Potion",
+    url: "https://nanispotion.com/",
   },
 
   ];

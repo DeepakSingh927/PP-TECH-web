@@ -28,12 +28,12 @@ export default function Home() {
       <Feature />
       <About />
       <FeaturesTab />
+      <WebPortfolio />
       <FunFact />
       <Integration />
       <CTA />
       <FAQ />
       <Testimonial />
-      <WebPortfolio />
       {/*<Pricing />*/}
       <Contact />
        {/*<Blog />*/}

@@ -151,18 +151,18 @@ const Header = () => {
             </ul>
           </nav>
 
-         <div className="mt-7 flex items-center gap-6 xl:mt-0">
+         <div className="mt-7 xl:flex items-center gap-6 xl:mt-0 text-center bg-slate-100 px-4 py-4">
              {/*<ThemeToggler />*/}
 
             <Link
-              href="https://github.com/NextJSTemplates/solid-nextjs"
+              href="tel:+91-9560656772"
               className="text-regular font-medium text-waterloo hover:text-primary"
             >
               +91-9560656772 🌟
             </Link>
 
             <Link
-              href="https://nextjstemplates.com/templates/solid"
+              href="/support"
               className="flex items-center justify-center rounded-full bg-primary text-sm/[10px] md:text-sm/[18px] px-5.5 py-2.5  text-white duration-300 ease-in-out hover:bg-primaryho"
             >
               Get a Quote 🔥

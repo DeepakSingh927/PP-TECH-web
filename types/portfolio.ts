@@ -3,5 +3,6 @@ export type Portfolio = {
     name: string;
     image: any;
     destination?: string;
+    url: string;
   };
   
