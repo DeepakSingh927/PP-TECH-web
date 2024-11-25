@@ -2,7 +2,7 @@
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Lines from "@/components/Lines";
+import Lines from "@/components/Home/Lines";
 import ScrollToTop from "@/components/ScrollToTop";
 import { ThemeProvider } from "next-themes";
 import { Inter } from "next/font/google";
@@ -10,7 +10,7 @@ import "../globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 import ToasterContext from "../context/ToastContext";
-import TopBar from "@/components/TopBar";
+import TopBar from "@/components/Home/TopBar";
 
 export default function RootLayout({
   children,

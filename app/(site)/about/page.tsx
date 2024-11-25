@@ -1,5 +1,5 @@
-import About from "@/components/About";
-import BlogItem from "@/components/Blog/BlogItem";
+import About from "@/components/Home/About";
+import BlogItem from "@/components/Home/Blog/BlogItem";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
