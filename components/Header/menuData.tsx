@@ -20,67 +20,38 @@ const menuData: Menu[] = [
     path: "/about",
   },
   {
-    id: 4,
+    id: 5,
     title: "Portfolio",
     newTab: false,
     path: "/#webportfolio",
   },
-
   {
-    id: 5,
-    title: "Careers",
-    newTab: false,
-    path: "/careers",
-  },
-  /*{
-    id: 3,
-    title: "Pages",
+    id: 4,
+    title: "Themes",
     newTab: false,
     submenu: [
       {
-        id: 31,
-        title: "Blog Grid",
+        id: 51,
+        title: "Aura Commerce",
         newTab: false,
-        path: "/blog",
-      },
-      {
-        id: 34,
-        title: "Sign In",
-        newTab: false,
-        path: "/auth/signin",
-      },
-      {
-        id: 35,
-        title: "Sign Up",
-        newTab: false,
-        path: "/auth/signup",
-      },
-      {
-        id: 35,
-        title: "Docs",
-        newTab: false,
-        path: "/docs",
-      },
-      {
-        id: 35.1,
-        title: "Support",
-        newTab: false,
-        path: "/support",
-      },
-      {
-        id: 36,
-        title: "404",
-        newTab: false,
-        path: "/error",
+        submenu: [
+          {
+            id: 511,
+            title: "Aura Commerce",
+            newTab: false,
+            path: "/blog",
+          },
+        ],
       },
     ],
-  },*/
+  },
 
   {
-    id: 4,
+    id: 6,
     title: "Contact Us",
     newTab: false,
-    path: "/support",
+    path: "/support"
+    ,
   },
 ];
 

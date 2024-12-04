@@ -35,19 +35,13 @@ export default function Home() {
   return (
     <main>
       <ACHero />
-      {/*<Brands />*/}
       <ACFeatures />
       <ACAbout />
-      <ACFeaturesTab />
       <ACWebPortfolio />
-      <ACFunFact />
       <ACIntegration />
       <ACCTA />
       <ACFAQ />
-      <ACTestimonial />
-      {/*<Pricing />*/}
       <ACContact />
-       {/*<Blog />*/}
     </main>
   );
 }

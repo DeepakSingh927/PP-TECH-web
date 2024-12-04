@@ -23,8 +23,7 @@ const Contact = () => {
       email: event.target[1].value,
       subject: event.target[2].value,
       phone: event.target[3].value,
-      topic: event.target[4].value,
-      message: event.target[5].value,
+      message: event.target[4].value,
     };
 
     const response = await fetch('/api/contact', {
@@ -116,31 +115,6 @@ const Contact = () => {
                     placeholder="Phone number"
                     className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
                   />
-
-                  
-                </div>
-
-                <div className="mb-12.5 flex flex-col gap-7.5 lg:flex-row lg:justify-between lg:gap-14">
-
-                <select
-  className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white"
-  defaultValue=""
-  name="topic"
->
-  <option value="" disabled>
-    Select a Topic
-  </option>
-  
-    <option value="Website Development">Website Development</option>
-    <option value="Website Maintenance">Website Maintenance</option>
-    <option value="UI/ UX Design">UI/ UX Design</option>
-  
-  <optgroup label="Themes">
-    <option value="Aura Commerce">Aura Commerce</option>
-  </optgroup>
-</select>
-
-                  
                 </div>
 
                 <div className="mb-11.5 flex">
@@ -252,8 +226,6 @@ const Contact = () => {
                   <a href="#">+91-9560656772</a>
                 </p>
               </div>
-
-              
             </motion.div>
           </div>
         </div>
