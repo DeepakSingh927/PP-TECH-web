@@ -1,0 +1,38 @@
+/* Add these styles for smooth header transitions */
+header {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Update navbar styles */
+@media (max-width: 1280px) {
+  .navbar {
+    @apply fixed left-0 w-full bg-white p-7.5 shadow-solid-5 dark:bg-blacksection;
+    top: 80px;
+  }
+
+  .submenu {
+    @apply mt-4 border-l border-stroke pl-4 dark:border-strokedark;
+  }
+}
+
+@media (min-width: 1280px) {
+  .navbar {
+    @apply static flex w-full items-center justify-between;
+  }
+
+  .submenu {
+    @apply invisible absolute left-0 top-full w-[200px] rounded-md bg-white p-4 transition-all group-hover:visible dark:bg-blacksection;
+  }
+}
+
+/* Add smooth transition for sticky header */
+header.sticky {
+  @apply top-0;
+}
+
+/* Ensure proper mobile menu positioning */
+@media (max-width: 1279px) {
+  header.sticky .navbar {
+    top: 64px; /* Adjust this value based on your header height */
+  }
+}

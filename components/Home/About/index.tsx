@@ -6,210 +6,293 @@ import Image from "next/image";
 const About = () => {
   return (
     <>
-      {/* <!-- ===== About Start ===== --> */}
-      <section className="overflow-hidden pb-10 lg:pb-25 xl:pb-10 xl:mt-10 ">
+      {/* <!-- ===== Hero Section ===== --> */}
+      <section className="overflow-hidden pt-2 lg:pt-8 xl:pt-15">
         <div className="mx-auto max-w-c-1235 px-4 md:px-8 xl:px-0">
-          <div className="md:flex items-center gap-8 lg:gap-32.5">
+          <div className="flex flex-col gap-4 md:flex-row md:items-center md:gap-8">
             <motion.div
               variants={{
-                hidden: {
-                  opacity: 0,
-                  x: -20,
-                },
-
-                visible: {
-                  opacity: 1,
-                  x: 0,
-                },
+                hidden: { opacity: 0, y: 20 },
+                visible: { opacity: 1, y: 0 },
               }}
               initial="hidden"
               whileInView="visible"
-              transition={{ duration: 0.5, delay: 0.1 }}
+              transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className="animate_left relative mx-auto aspect-[588/526.5] w-full md:w-1/2"
+              className="md:w-1/2"
             >
-              <Image
-                src="/images/about/about1.png"
-                alt="About"
-                className="dark:hidden w-full"
-                fill
-              />
-              <Image
-                src="/images/about/about1.png"
-                alt="About"
-                className="hidden dark:block w-full"
-                fill
-              />
+              <h1 className="mb-4 text-4xl font-bold text-black dark:text-white lg:text-5xl">
+                Welcome to PP Design and Tech
+              </h1>
+              <p className="text-lg leading-relaxed">
+                 Crafting Digital Excellence through seamless, high-performing, and visually captivating digital experiences. Our expertise lies in Shopify, WooCommerce, WordPress, Next.js, and Laravel development, helping businesses establish a strong online presence.
+              </p>
             </motion.div>
             <motion.div
               variants={{
-                hidden: {
-                  opacity: 0,
-                  x: 20,
-                },
-
-                visible: {
-                  opacity: 1,
-                  x: 0,
-                },
+                hidden: { opacity: 0, x: 20 },
+                visible: { opacity: 1, x: 0 },
               }}
               initial="hidden"
               whileInView="visible"
-              transition={{ duration: 0.5, delay: 0.1 }}
+              transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className="animate_right md:w-1/2"
+              className="md:w-1/2 -mt-4"
             >
-              <span className="font-medium uppercase text-black dark:text-white">
-                <span className="mt-20 mb-4 mr-4 inline-flex rounded-full bg-meta px-4.5 py-1 text-metatitle uppercase text-white ">
-                  FROM
-                </span>{" "}
-                SHOPIFY TO WORDPRESS,
-              </span>
-              <h2 className="relative mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
-              A Complete Solution for Your Digital Transformation
-                {/*<span className="relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg dark:before:bg-titlebgdark">
-                drive growth and deliver results.
-                </span>*/}
-              </h2>
-              <p>
-              From Shopify to WordPress, we specialize in creating high-impact websites that drive growth and deliver results.
-              </p>
-
-              <div className="mt-7.5 flex items-center gap-5">
-                <div className="flex h-15 w-15 items-center justify-center rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection">
-                  <p className="text-metatitle2 font-semibold text-black dark:text-white">
-                    01
-                  </p>
-                </div>
-                <div className="w-3/4">
-                  <h3 className="mb-0.5 text-metatitle2 text-black dark:text-white">
-                  Tailored Development
-                  </h3>
-                  <p>Custom solutions using the latest in Shopify, WooCommerce, and WordPress to fit your business needs.</p>
-                </div>
-              </div>
-              <div className="mt-7.5 flex items-center gap-5">
-                <div className="flex h-15 w-15 items-center justify-center rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection">
-                  <p className="text-metatitle2 font-semibold text-black dark:text-white">
-                    02
-                  </p>
-                </div>
-                <div className="w-3/4">
-                  <h3 className="mb-0.5 text-metatitle2 text-black dark:text-white">
-                  Fully Customizable Designs
-                  </h3>
-                  <p>Every website is crafted for your brand’s unique identity, offering flexibility and scalability.</p>
-                </div>
-              </div>
-              <div className="mt-7.5 flex items-center gap-5">
-                <div className="flex h-15 w-15 items-center justify-center rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection">
-                  <p className="text-metatitle2 font-semibold text-black dark:text-white">
-                    03
-                  </p>
-                </div>
-                <div className="w-3/4">
-                  <h3 className="mb-0.5 text-metatitle2 text-black dark:text-white">
-                  Optimized for Performance
-                  </h3>
-                  <p>Our websites are built to be fast, secure, and scalable, ensuring a seamless user experience across all devices.</p>
-                </div>
-              </div>
+              <Image
+                src="/images/about/about1.png"
+                alt="About Hero"
+                width={600}
+                height={400}
+                className="rounded-lg"
+              />
             </motion.div>
           </div>
         </div>
       </section>
-      {/* <!-- ===== About End ===== --> */}
 
-      {/* <!-- ===== About Two Start ===== --> */}
-      {/*<section>
-        <div className="mx-auto max-w-c-1235 overflow-hidden px-4 md:px-8 2xl:px-0">
+      {/* <!-- ===== Who We Are Section ===== --> */}
+      <section className="py-20">
+        <div className="mx-auto max-w-c-1235 px-4 md:px-8 xl:px-0">
+          <motion.div
+            variants={{
+              hidden: { opacity: 0, y: 20 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="text-center mb-15"
+          >
+            <h2 className="mb-4 text-3xl font-bold text-black dark:text-white">Who We Are</h2>
+            <p className="mx-auto max-w-3xl">
+              We are a dedicated team of designers, developers, and strategists who believe in delivering tailor-made solutions that enhance user engagement and boost conversions. With years of experience in eCommerce, web development, UI/UX design, and SaaS solutions, we transform ideas into reality.
+            </p>
+          </motion.div>
+
+          {/* Services Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {services.map((service, index) => (
+              <motion.div
+                key={index}
+                variants={{
+                  hidden: { opacity: 0, y: 20 },
+                  visible: { opacity: 1, y: 0 },
+                }}
+                initial="hidden"
+                whileInView="visible"
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="p-8 rounded-lg bg-white dark:bg-blacksection shadow-solid-3 cursor-pointer"
+                onClick={() => window.location.href = service.link}
+              >
+                <div className="mb-4 text-primary">{service.icon}</div>
+                <h3 className="mb-4 text-xl font-bold text-black dark:text-white">{service.title}</h3>
+                <p>{service.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* <!-- ===== Why Choose Us Section ===== --> */}
+      <section className="bg-white dark:bg-blacksection py-20">
+        <div className="mx-auto max-w-c-1235 px-4 md:px-8 xl:px-0">
           <div className="md:flex items-center gap-8 lg:gap-32.5">
             <motion.div
               variants={{
-                hidden: {
-                  opacity: 0,
-                  x: -20,
-                },
-
-                visible: {
-                  opacity: 1,
-                  x: 0,
-                },
+                hidden: { opacity: 0, x: -20 },
+                visible: { opacity: 1, x: 0 },
               }}
               initial="hidden"
               whileInView="visible"
-              transition={{ duration: 1, delay: 0.1 }}
+              transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className="animate_left md:w-1/2"
+              className="md:w-1/2"
             >
-              <h4 className="font-medium uppercase text-black dark:text-white">
-                Third Party Integrations
-              </h4>
-              <h2 className="relative mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
-              Integrated Solutions for Effortless Business Growth {"   "}
-                <span className="relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg2 dark:before:bg-titlebgdark">
-                  Integrations
-                </span>
-              </h2>
-              <p>
-              Leverage our ready-to-use integrations to streamline your processes, enhance user experience, and scale your business with ease.
-              </p>
-              <div>
-                <a
-                  href="#"
-                  className="group mt-7.5 inline-flex items-center gap-2.5 text-black hover:text-primary dark:text-white dark:hover:text-primary"
-                >
-                  <span className="duration-300 group-hover:pr-2">
-                  Learn How We Can Help
-                  </span>
-                  <svg
-                    width="14"
-                    height="14"
-                    viewBox="0 0 14 14"
-                    fill="currentColor"
-                  >
-                    <path d="M10.4767 6.16701L6.00668 1.69701L7.18501 0.518677L13.6667 7.00034L7.18501 13.482L6.00668 12.3037L10.4767 7.83368H0.333344V6.16701H10.4767Z" />
-                  </svg>
-                </a>
+              <h2 className="mb-6 text-3xl font-bold text-black dark:text-white">Why Choose Us?</h2>
+              <div className="space-y-6">
+                {whyChooseUs.map((item, index) => (
+                  <div key={index} className="flex items-start gap-4">
+                    <div className="text-primary text-2xl">✔</div>
+                    <div>
+                      <h4 className="text-lg font-semibold text-black dark:text-white">{item.title}</h4>
+                      <p>{item.description}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
             </motion.div>
             <motion.div
               variants={{
-                hidden: {
-                  opacity: 0,
-                  x: 20,
-                },
-
-                visible: {
-                  opacity: 1,
-                  x: 0,
-                },
+                hidden: { opacity: 0, x: 20 },
+                visible: { opacity: 1, x: 0 },
               }}
               initial="hidden"
               whileInView="visible"
-              transition={{ duration: 1, delay: 0.1 }}
+              transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className="animate_right relative mx-auto aspect-[588/526.5] w-full md:w-1/2"
+              className="md:w-1/2 mt-8 md:mt-0"
             >
               <Image
-                src="./images/about/about-light-02.svg"
-                alt="About"
-                className="dark:hidden w-full mt-8"
-                fill
-              />
-              <Image
-                src="./images/about/about-dark-02.svg"
-                alt="About"
-                className="hidden dark:block w-full mt-8"
-                fill
+                src="/images/about/about-dark-01.png"
+                alt="Why Choose Us"
+                width={600}
+                height={400}
+                className="rounded-lg shadow-lg w-full h-auto"
+                priority
               />
             </motion.div>
           </div>
         </div>
-      </section>*/}
-      {/* <!-- ===== About Two End ===== --> */}
+      </section>
+
+      {/* <!-- ===== CTA Section ===== --> */}
+      <section className="py-20 bg-primary/10">
+        <div className="mx-auto max-w-c-1235 px-4 md:px-8 xl:px-0 text-center">
+          <motion.div
+            variants={{
+              hidden: { opacity: 0, y: 20 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="mb-4 text-3xl font-bold text-black dark:text-white">Let's Build Something Amazing!</h2>
+            <p className="mb-8">Have a project in mind? Let's discuss how we can elevate your brand with our expertise.</p>
+            <a
+              href="/support"
+              className="inline-flex items-center justify-center rounded-full bg-primary px-7 py-3 text-white hover:bg-primary/90 transition duration-300"
+            >
+              Contact Us Today
+            </a>
+          </motion.div>
+        </div>
+      </section>
     </>
   );
 };
+
+// Data arrays
+const services = [
+  {
+    icon: (
+      <div className="w-16 h-16">
+        <Image
+          src="/images/icon/shopify.png"
+          alt="Shopify Development"
+          width={64}
+          height={64}
+          className="w-full h-full object-contain"
+        />
+      </div>
+    ),
+    title: "Shopify Development",
+    description: "Custom themes, apps, and integrations for your online store",
+    link: "/services/shopify"
+  },
+  {
+    icon: (
+      <div className="w-16 h-16">
+        <Image
+          src="/images/icon/wordpress.png"
+          alt="WordPress & WooCommerce"
+          width={64}
+          height={64}
+          className="w-full h-full object-contain"
+        />
+      </div>
+    ),
+    title: "WordPress & WooCommerce",
+    description: "Scalable websites and eCommerce stores",
+    link: "/services/wordpress"
+  },
+  {
+    icon: (
+      <div className="w-16 h-16">
+        <Image
+          src="/images/icon/next-js.png"
+          alt="Next.js"
+          width={64}
+          height={64}
+          className="w-full h-full object-contain"
+        />
+      </div>
+    ),
+    title: "Next.js & Laravel",
+    description: "High-performance web applications",
+    link: "/services/nextjs"
+  },
+  {
+    icon: (
+      <div className="w-16 h-16">
+        <Image
+          src="/images/icon/ui.ux.png"
+          alt="ui ux"
+          width={64}
+          height={64}
+          className="w-full h-full object-contain"
+        />
+      </div>
+    ),
+    title: "UI/UX Design",
+    description: "Modern, user-friendly, and conversion-optimized designs",
+    link: "/services/uiux"
+  },
+  {
+    icon: (
+      <div className="w-16 h-16">
+        <Image
+          src="/images/icon/graphic design.jpeg"
+          alt="graphic design"
+          width={64}
+          height={64}
+          className="w-full h-full object-contain"
+        />
+      </div>
+    ),
+    title: "Graphic Design & Branding" ,  
+    description: "Create stunning visuals and strong brand identities with our design expertise.",
+    link: "/services/graphic-design"
+  },
+  {
+    icon: (
+      <div className="w-16 h-16">
+        <Image
+          src="/images/icon/maintenance.png"
+          alt="Support & maintance"
+          width={64}
+          height={64}
+          className="w-full h-full object-contain"
+        />
+      </div>
+    ),
+    title: "Support & Maintenance",
+    description: "Dedicated support and continuous improvement",
+    link: "/services/maintenance"
+  },
+];
+
+const whyChooseUs = [
+  {
+    title: "Expertise in Modern Web Technologies",
+    description: "Stay ahead with cutting-edge development practices and tools",
+  },
+  {
+    title: "Custom-tailored Solutions",
+    description: "Solutions designed specifically for your business needs",
+  },
+  {
+    title: "Scalable Development",
+    description: "Build systems that grow with your business",
+  },
+  {
+    title: "Dedicated Support",
+    description: "Round-the-clock support and maintenance services",
+  },
+];
 
 export default About;

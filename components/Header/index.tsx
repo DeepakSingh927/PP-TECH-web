@@ -40,10 +40,10 @@ const Header = () => {
 
       {/* Header */}
       <header
-        className={`fixed shadow left-0 top-8 z-99999 w-full py-7 ${
+        className={`fixed left-0 z-99999 w-full py-7 transition-all duration-300 ${
           stickyMenu
-            ? "bg-white !py-4 shadow transition duration-100 dark:bg-black"
-            : ""
+            ? "bg-white !py-4 shadow-md dark:bg-black top-0"
+            : "top-8"
         }`}
       >
         <div className="relative mx-auto max-w-c-1390 items-center justify-between px-4 md:px-8 xl:flex 2xl:px-0">
@@ -191,3 +191,4 @@ const Header = () => {
 };
 
 export default Header;
+ 
