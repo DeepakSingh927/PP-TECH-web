@@ -46,7 +46,7 @@ const Footer = () => {
                 </a>
 
                 <p className="mb-10 mt-5">
-                  PP Design and Tech specializes in custom website development,
+                  Pi Design and Tech specializes in custom website development,
                   offering expertise in Shopify, WooCommerce, and WordPress. We
                   create visually stunning, high-performance websites tailored
                   to each client’s needs. Our focus is on delivering digital
