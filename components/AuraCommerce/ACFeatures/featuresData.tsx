@@ -7,6 +7,7 @@ const featuresData: Feature[] = [
     title: "Dynamic Design",
     description:
       "Fully customizable layouts that adapt to your brand's needs.",
+    link: "/features/dynamic-design"
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ const featuresData: Feature[] = [
     title: "Engaging Sections",
     description:
       "Slideshow, Shop by Collection, Testimonials, and more.",
+    link: "/features/engaging-sections"
   },
   {
     id: 3,
@@ -21,6 +23,7 @@ const featuresData: Feature[] = [
     title: "Seamless Navigation",
     description:
       "Intuitive browsing for customers on all devices.",
+    link: "/features/seamless-navigation"
   },
 
   {
@@ -29,6 +32,7 @@ const featuresData: Feature[] = [
     title: "Optimized for Sales",
     description:
       "Active Offers Block, Complementary Products, and Quick Add-to-Cart buttons.",
+    link: "/features/optimized-sales"
   },
   {
     id: 5,
@@ -36,6 +40,7 @@ const featuresData: Feature[] = [
     title: "Direct Interaction",
     description:
       "WhatsApp Integration for personalized customer communication.",
+    link: "/features/direct-interaction"
   },
   {
     id: 6,
@@ -43,10 +48,8 @@ const featuresData: Feature[] = [
     title: "Lightning-Fast Performance",
     description:
       "Optimized for speed, ensuring quick load times and a seamless user experience.",
+    link: "/features/performance"
   },
-
-
-  
 ];
 
 export default featuresData;
