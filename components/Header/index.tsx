@@ -30,7 +30,7 @@ const Header = () => {
   return (
     <>
       {/* Top Bar */}
-      <div className="w-full bg-[#E05E0B] py-2 text-center text-sm text-white">
+      <div className="w-full bg-[#6af804] py-2 text-center text-sm text-white">
         Get Free Consultation: <span>
     <a href="tel:+919560656772" className="underline hover:text-gray-200">
       +91-9560656772
