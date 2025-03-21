@@ -26,16 +26,22 @@ const Contact = () => {
       message: event.target[4].value,
     };
 
-    const response = await fetch('/api/contact', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(formData),
-    });
-  
-    const result = await response.json();
-    if (result.success) {
-      alert('Message sent successfully');
-    } else {
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+      if (response.ok) {
+        alert('Message sent successfully');
+      } else {
+        console.error('Error response from server:', result);
+        alert('Failed to send message');
+      }
+    } catch (error) {
+      console.error('Error sending message:', error);
       alert('Failed to send message');
     }
   };

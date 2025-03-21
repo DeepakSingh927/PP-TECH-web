@@ -5,13 +5,22 @@ import { NextResponse } from 'next/server';
 const prisma = new PrismaClient();
 
 export async function POST(req: Request) {
-  const { name, email, subject, phone, message, topic } = await req.json();
-
   try {
+    const { name, email, subject, phone, message, topic } = await req.json();
+
+    // Validate required fields
+    if (!name || !email || !subject || !message) {
+      return NextResponse.json(
+        { error: 'Please fill in all required fields' },
+        { status: 400 }
+      );
+    }
+
     // Save contact data to the database
     const contact = await prisma.contact.create({
       data: { name, email, subject, phone, message, topic },
     });
+    console.log('Contact saved to database:', contact);
 
     // Create a transporter
     const transporter = nodemailer.createTransport({
@@ -25,34 +34,28 @@ export async function POST(req: Request) {
     });
 
     // Send the email
-    await transporter.sendMail({
+    const emailInfo = await transporter.sendMail({
       from: `"Contact Form" <${process.env.EMAIL_USER}>`, // Sender address
-      to: 'contact@ppdesigntech.com', // Receiver address
+      to: 'deepaksinghh217@gmail.com', // Receiver address  contact@ppdesigntech.com
       subject: `New Contact Form Submission: ${subject}`,
       text: `
         Name: ${name}
         Email: ${email}
         Phone: ${phone}
-        Topic: ${topic}
         Message: ${message}
-      `,
-      html: `
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Phone:</strong> ${phone}</p>
-        <p><strong>Topic:</strong> ${topic}</p>
-        <p><strong>Message:</strong> ${message}</p>
+        Topic: ${topic}
       `,
     });
+    console.log('Email sent:', emailInfo);
 
     return NextResponse.json(
-      { success: true, message: 'Contact saved and email sent successfully', data: contact },
+      { success: true, message: 'Message sent successfully' },
       { status: 200 }
     );
   } catch (error) {
-    console.error('Error in contact API:', error);
+    console.error('Server error:', error);
     return NextResponse.json(
-      { success: false, error: 'Failed to process request' },
+      { success: false, error: 'Failed to send message' },
       { status: 500 }
     );
   }
