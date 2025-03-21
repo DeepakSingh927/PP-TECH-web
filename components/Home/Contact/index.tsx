@@ -37,16 +37,16 @@ const Contact = () => {
 
       const result = await response.json();
       
-      if (response.status === 200) {
+      if (response.ok) {
         alert('Message sent successfully');
-        form.reset(); // Clear form after successful submission
+        form.reset();
       } else {
-        console.error('Server error:', result.error);
-        alert(result.error || 'Failed to send message');
+        console.error('Server error:', result);
+        alert(result.error || result.details || 'Failed to send message');
       }
     } catch (error) {
       console.error('Request error:', error);
-      alert('Failed to send message');
+      alert('Network error: Failed to send message');
     }
   };
 
