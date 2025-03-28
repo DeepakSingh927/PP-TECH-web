@@ -21,7 +21,7 @@ const WordPressPage = () => {
                 At PP Design and Tech, we create high-performance WordPress websites and WooCommerce stores that enhance user experience and drive conversions.
               </p>
               <a
-                href="/contact-us"
+                href="/support"
                 className="inline-flex items-center justify-center rounded-full bg-primary px-7 py-3 text-white hover:bg-primary/90 transition duration-300"
               >
                 Start Your Project

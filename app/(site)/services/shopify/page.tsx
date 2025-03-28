@@ -21,7 +21,7 @@ const ShopifyPage = () => {
                 At PP Design and Tech, we specialize in Shopify development to create scalable, high-converting eCommerce stores. Whether you're launching a new store or optimizing an existing one, our Shopify experts craft customized solutions tailored to your brand.
               </p>
               <a
-                href="/contact-us"
+                   href="/support"
                 className="inline-flex items-center justify-center rounded-full bg-primary px-7 py-3 text-white hover:bg-primary/90 transition duration-300"
               >
                 Start Your Project

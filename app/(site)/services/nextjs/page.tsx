@@ -22,7 +22,7 @@ const NextJsPage = () => {
                 PP Design and Tech specializes in Laravel and Next.js development, delivering high-performance web applications tailored to your business needs. Whether you require a dynamic web portal, SaaS solution, e-commerce platform, or API-driven application, we build secure, scalable, and feature-rich solutions.
               </p>
               <a
-                href="/contact-us"
+                   href="/support"
                 className="inline-flex items-center justify-center rounded-full bg-primary px-7 py-3 text-white hover:bg-primary/90 transition duration-300"
               >
                 Start Your Project

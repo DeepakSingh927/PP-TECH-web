@@ -22,7 +22,7 @@ const UiUxPage = () => {
                 At PP Design and Tech, we design engaging, user-friendly, and conversion-focused UI/UX experiences. Our goal is to create interfaces that delight users and drive business growth.
               </p>
               <a
-                href="/contact-us"
+                   href="/support"
                 className="inline-flex items-center justify-center rounded-full bg-primary px-7 py-3 text-white hover:bg-primary/90 transition duration-300"
               >
                 Start Your Project
